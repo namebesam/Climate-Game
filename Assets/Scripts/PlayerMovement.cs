@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
     public KeyCode jumpKey = KeyCode.Space;
-    private int jumpsLeft = 2; //double jump
+    private int jumpsLeft = 1; //double jump
 
     //slope movement stuff
     public float maxSlopeAngle;
@@ -155,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
-        jumpsLeft = 2;
+        jumpsLeft = 1;
     }
 
     private bool OnSlope()
